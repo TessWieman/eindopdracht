@@ -136,6 +136,7 @@ h4{
     width: 16vw;
 }
 
+/*dit werkt !!NIET!!*/ 
 section .flexbox-recepten{
     display: flex;
     justify-content: space-evenly;
