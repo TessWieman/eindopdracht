@@ -1,16 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #e7e6ec;
-    
+    font-family: 'Source Sans 3', sans-serif;
 }
 
-.header {
+nav {
     width: 100%;
     height: 30vh;
-}
-
-nav{
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -30,37 +26,221 @@ a{
     color: black;
 }
 
+.buttonheader{
+    transition: all 250ms;
+}
+
+.buttonheader:hover{
+    text-decoration: underline #555555;
+}
+
 /*uitzoeken wat dit is*/
 nav, ul, li{
     display: inline-block;
     margin: 10px 30px;
 }
 
-footer img{
-    width: 40px;
-    height: 40px;
+.banner{
+    opacity: 75%;
+    width: 100%;
 }
 
+/*fix de footer met de link logos
+de images zijn nu niet relatief!!*/
+footer img{
+    width: 3%;
+    height: 3%;
+}
 
+footer nav, 
+.socialmedia h3,
+.socialmedia,
+footer nav ul li a,
+footer nav ul,
+h4{
+    width: 100%;
+    background-color: #555555;
+    color: white;
+    margin: 1.4em 0em 0em 0em;
+}
+
+.socialmedia h3{
+    font-size: 120%;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+}
+
+h4{
+    font-weight: 100;
+    font-size: 70%;
+    margin-top: 3.4em;
+}
+
+.cuisine h2{
+    text-align: left;
+    margin: 2% 0em 2% 4.7em;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    display: block;
+    border: 2px solid #555555;
+    border-radius: 10%;
+    background-color: #EDEDED;
+    display: inline-flex;
+    justify-content: center;
+    margin: 1.4em 7em 1.4em 7em;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    transition: all 250ms;
+    font-size: 120%;
+}
+
+.button:hover{
+    border: 2px solid #f5bd1f;
+    color: black;
+    transition: all 120ms;
+}
 
 /*tweede pagina*/
-.colored-box{
-    background-color: #86B352;
-    width: 100%;
-    height: 40vh;
+
+
+
+.info-cuisine{
+    margin: 0% 1.4em 0% 1.4em;
 }
-.colored-box h1, p{
-    background-color: #86B352;
-    color: white;
-    font-family: 'arial', serif;
+
+.info-cuisine h2, p{
+    margin-bottom: 1.4em;
+}
+
+.info-cuisine p{
+    background-color: whitesmoke;
+    padding: 3% 0% 3% 0%;
+}
+
+.lijst-recepten{
+    margin: 0em 3.92em 0em 3.92em;
+    border: 2px solid #555555;
+    width: 16vw;
+}
+
+.lijst-recepten:hover{
+    border: 2px solid #f5bd1f;
+}
+
+.lijst-recepten img{
+    height: 20vh; 
+    width: 16vw;
+}
+
+section .flexbox-recepten{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.beschrijving{
+    padding: 15px;
+    text-align: center;
+    font-size: 125%;
+    font-weight: 100;
+}
+
+
+/*derde pagina*/
+
+h3{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times;
+    font-weight: 200;
+    margin: 0em 0em 1.4em 1.4em;
+}
+
+.naamrecept h2{
+    text-align: center;
+    font-size: 240%;
+    font-weight: 200;
+    margin: auto;
 }
 
 .info-bereidingswijze{
+    margin-bottom: 1.4em;
+}
+
+.info-bereidingswijze h3{
     text-align: left;
+    margin-top: 1.4em;
+    margin-bottom: 0em;
 }
 
 .benodigdheden{
-    background-color: #86B352;
-    width: 100%;
-    height: 40vh;
+    width: 99.45%;
+    display: block;
+    background-color: whitesmoke;
+    border: 4px solid #f5bd1f;
+    text-align: left;
+}
+
+.benodigdheden img{
+    width: 44.3%
+}
+
+.benodigdheden h3{
+    background-color: whitesmoke;
+    margin: 0em 0em 0em 1em;
+}
+
+.fotogerecht{
+    float: right;
+}
+
+.benodigdheden ul li,
+.bereidingswijze ol li{
+    display: list-item;
+}
+
+.bereidingswijze ol li,
+.bereidingswijze ol{
+    margin: 0em 3em 1.4em 3em;
+    font-size: 110%;
+    font-weight: 100;
+}
+
+.bereidingswijze h3{
+    text-align: center;
+    margin-top: 1.4em;
+}
+
+/*about me pagina*/ 
+h2{
+    font-size: 200%;
+    margin: 0% 1.4em 1.4%;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times;
+}
+.tess h3{
+    text-align: center;
+    font-size: 220%;
+    margin-bottom: 2%;
+}
+p{
+    margin: 0% 1.4em 0% 1.4em;
+    font-size: 120%;
+    font-weight: 100;
+    margin-bottom: 2%;
+}
+
+.profiel img{
+    border-radius: 50%;
+    height: 20%; 
+    width: 20%;
+}
+
+.profiel{
+    display: flex;
+    justify-content: end;
+    margin-right: 1.4em;
 }
