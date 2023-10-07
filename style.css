@@ -1,15 +1,17 @@
+/*Algmene opmaak op de pagina's*/
 * {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
 }
 
+/*Algemene opmaak op de pagina's -Header*/ 
 nav {
     width: 100%;
     height: 30vh;
     width: 95%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
     text-align: center;
 }
@@ -26,27 +28,35 @@ a{
     color: black;
 }
 
-.buttonheader{
-    transition: all 250ms;
-}
-
-.buttonheader:hover{
-    text-decoration: underline #555555;
-}
-
 /*uitzoeken wat dit is*/
 nav, ul, li{
     display: inline-block;
-    margin: 10px 30px;
+    margin: 0.6em 1.8em;
 }
 
-.banner{
-    opacity: 75%;
-    width: 100%;
+/*Algemene opmaak op de pagina's -TEXT*/ 
+h2{
+    font-size: 200%;
+    margin: 0% 1.4em 1.4%;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times;
 }
 
-/*fix de footer met de link logos
-de images zijn nu niet relatief!!*/
+h3{
+    text-align: center;
+    font-size: 220%;
+    margin-bottom: 2%;
+    font-family: 'Times New Roman', Times;
+}
+
+p{
+    margin: 0% 1.4em 0% 1.4em;
+    font-size: 120%;
+    font-weight: 100;
+    margin-bottom: 2%;
+}
+
+/*Algeme opmaak op de pagina's - FOOTER*/ 
 footer img{
     width: 3%;
     height: 3%;
@@ -74,6 +84,20 @@ h4{
     font-weight: 100;
     font-size: 70%;
     margin-top: 3.4em;
+}
+
+/*Homepage*/
+.buttonheader{
+    transition: all 500ms;
+}
+
+.buttonheader:hover{
+    text-decoration: underline #555555;
+}
+
+.banner{
+    opacity: 75%;
+    width: 100%;
 }
 
 .cuisine h2{
@@ -104,10 +128,7 @@ h4{
     transition: all 120ms;
 }
 
-/*tweede pagina*/
-
-
-
+/*Tweede Pagina*/
 .info-cuisine{
     margin: 0% 1.4em 0% 1.4em;
 }
@@ -122,9 +143,10 @@ h4{
 }
 
 .lijst-recepten{
-    margin: 0em 3.92em 0em 3.92em;
+    margin: 0em 3.92em 5em 3.92em;
     border: 2px solid #555555;
-    width: 16vw;
+    width: 16%;
+    float: left;
 }
 
 .lijst-recepten:hover{
@@ -132,33 +154,19 @@ h4{
 }
 
 .lijst-recepten img{
-    height: 20vh; 
-    width: 16vw;
-}
-
-/*dit werkt !!NIET!!*/ 
-section .flexbox-recepten{
-    display: flex;
-    align-items: center;
+    height: 100%; 
+    width: 100%;
 }
 
 .beschrijving{
-    padding: 15px;
+    padding: 0.9em;
     text-align: center;
-    font-size: 125%;
+    font-size: 100%;
     font-weight: 100;
 }
 
 
-/*derde pagina*/
-
-h3{
-    font-size: 200%;
-    font-family: 'Times New Roman', Times;
-    font-weight: 200;
-    margin: 0em 0em 1.4em 1.4em;
-}
-
+/*Derde Pagina*/
 .naamrecept h2{
     text-align: center;
     font-size: 240%;
@@ -172,8 +180,9 @@ h3{
 
 .info-bereidingswijze h3{
     text-align: left;
-    margin-top: 1.4em;
-    margin-bottom: 0em;
+    margin: 1.4em 0em 0em 1.4em;
+    font-size: 200%;
+    font-weight: 200;
 }
 
 .benodigdheden{
@@ -184,17 +193,18 @@ h3{
     text-align: left;
 }
 
+/*mag geen float gebruiken*/
 .benodigdheden img{
-    width: 44.3%
+    width: 43.6%;
+    float: right; 
 }
 
 .benodigdheden h3{
     background-color: whitesmoke;
-    margin: 0em 0em 0em 1em;
-}
-
-.fotogerecht{
-    float: right;
+    margin: 0em 0em 0em 1.4em;
+    font-size: 200%;
+    text-align: left;
+    font-weight: 200;
 }
 
 .benodigdheden ul li,
@@ -212,34 +222,19 @@ h3{
 .bereidingswijze h3{
     text-align: center;
     margin-top: 1.4em;
-}
-
-/*about me pagina*/ 
-h2{
     font-size: 200%;
-    margin: 0% 1.4em 1.4%;
     font-weight: 200;
-    font-family: 'Times New Roman', Times;
-}
-.tess h3{
-    text-align: center;
-    font-size: 220%;
-    margin-bottom: 2%;
-}
-p{
-    margin: 0% 1.4em 0% 1.4em;
-    font-size: 120%;
-    font-weight: 100;
-    margin-bottom: 2%;
 }
 
-.profiel img{
+/*About-Me Pagina*/ 
+.profiel{
     border-radius: 50%;
     height: 20%; 
     width: 20%;
 }
 
-.profiel{
+/*DIT WERKT NIET*/ 
+.profiel img{
     display: flex;
     justify-content: end;
     margin-right: 1.4em;
