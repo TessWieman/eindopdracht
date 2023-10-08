@@ -5,6 +5,9 @@
     font-family: 'Source Sans 3', sans-serif;
 }
 
+section{
+    display: flex;
+}
 /*Algemene opmaak op de pagina's - Header*/ 
 nav {
     width: 100%;
@@ -230,8 +233,4 @@ h4{
     height: 13%; 
     width: 13%;
     margin-right: 1.4em;
-}
-
-section{
-    display: flex;
 }
