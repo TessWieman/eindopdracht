@@ -5,7 +5,7 @@
     font-family: 'Source Sans 3', sans-serif;
 }
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
 }
